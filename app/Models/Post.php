@@ -10,13 +10,12 @@ class Post extends Model
 {
     use HasFactory, Searchable;
 
-    // protected $fillable = ['title', 'description'];
     protected $guarded = [];
 
-    public function shouldBeSearchable()
-    {
-        return $this->published === 1;
-    }
+    // public function shouldBeSearchable()
+    // {
+    //     return $this->published === 1;
+    // }
 
     public function user()
     {
